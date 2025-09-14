@@ -116,7 +116,7 @@ nginx: [emerg] unexpected end of file, expecting "}" in /etc/nginx/nginx.conf:28
 nginx: [emerg] unexpected end of file, expecting "}" in /etc/nginx/nginx.conf:28
 user@u22ws:~/otus/hw-19$
 ```
-Ошибка в конфигурационном файле. Добавлям недостающую закрывающую скобку и пересобираем контейнер
+Ошибка в конфигурационном файле. Добавлям недостающую закрывающую скобку и пересобираем образ
 ```
 user@u22ws:~/otus/hw-19$ docker stop 630dcc7fa70dffdd16
 630dcc7fa70dffdd16
