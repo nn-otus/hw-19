@@ -174,7 +174,7 @@ CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS 
 user@u22ws:~/otus/hw-19$ 
 ```
 Контейнер стартовал успешно. Проверяем начальную страницу http://localhost:8080
-![Скриншот начальной страницы](browser_screenshot.png)
+![Скриншот начальной страницы](pics/browser_screenshot.png)
 
 #### 4. Определите разницу между контейнером и образом
 
