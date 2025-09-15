@@ -216,21 +216,12 @@ Dockerfile = чертёж, проектная документация для с
 Нет. В отличие от виртуальной машины контейнер использует ресурсы хоста напрямую, он просто изолирован от других процессов хоста. Можно проверить через версию операционной системы:
 ```
 user@u22ws:~/otus/hw-19$ docker exec -it 03f8ed92e09b2acf sh
-/ # ps
-/ # uptime
- 09:03:06 up  4:19,  0 users,  load average: 0.28, 0.18, 0.18
+
 / # cat /proc/version
 Linux version 6.14.0-29-generic (buildd@lcy02-amd64-033) (x86_64-linux-gnu-gcc-14 (Ubuntu 14.2.0-19ubuntu2) 14.2.0, GNU ld (GNU Binutils for Ubuntu) 2.44) #29-Ubuntu SMP PREEMPT_DYNAMIC Thu Aug  7 18:32:38 UTC 2025
 / # 
 ```
-В выводе команд видно, что uptime соответствует времени работы хоста, не контейнера
-```
-user@u22ws:~/otus/hw-19$ docker ps 
-CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS                                     NAMES
-03f8ed92e09b   nginx-hw-19:v0   "nginx -g 'daemon of…"   6 seconds ago   Up 5 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   priceless_keller
-user@u22ws:~/otus/hw-19$ 
-```
-А операционная система - Ubuntu, тогда как в контейнере - Alpine
+В выводе команды видно, что операционная система - Ubuntu, тогда как в контейнере - Alpine
 
 ### ДЗ-19 выполнено
 
